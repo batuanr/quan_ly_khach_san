@@ -4,9 +4,6 @@ public class Room {
     private int roomNumber;
     private boolean emptyRoom = true;
 
-    public Room(int roomNumber) {
-        this.roomNumber = roomNumber;
-    }
 
     public Room(String typeRoom, int price, int roomNumber) {
         this.typeRoom = typeRoom;

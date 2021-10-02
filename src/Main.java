@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Main {
@@ -6,16 +6,17 @@ public class Main {
     public static void main(String[] args) {
 
 
-        hotel.addRoom(new Room1(101));
-        hotel.addRoom(new Room1(102));
-        hotel.addRoom(new Room1(103));
-        hotel.addRoom(new Room1(104));
-        hotel.addRoom(new Room1(105));
-        hotel.addRoom(new Room2(202));
-        hotel.addRoom(new Room2(202));
-        hotel.addRoom(new Room2(203));
-        hotel.addRoom(new Room2(204));
-        hotel.addRoom(new Room2(205));
+        hotel.addRoom(new Room("VIP",500, 101));
+        hotel.addRoom(new Room("VIP", 500,102));
+        hotel.addRoom(new Room("VIP", 500, 103));
+        hotel.addRoom(new Room("VIP", 500, 104));
+        hotel.addRoom(new Room("VIP", 500, 105));
+        hotel.addRoom(new Room("Normal", 300, 201));
+        hotel.addRoom(new Room("Normal", 300, 202));
+        hotel.addRoom(new Room("Normal", 300, 203));
+        hotel.addRoom(new Room("Normal", 300, 204));
+        hotel.addRoom(new Room("Normal", 300, 205));
+
 
 
 
@@ -84,7 +85,7 @@ public class Main {
         Room room = null;
         if (a == 1){
             for (Room rom: hotel.rooms){
-                if(rom instanceof Room2 && rom.isEmptyRoom()){
+                if(rom.getPrice() == 500 && rom.isEmptyRoom()){
                     room = rom;
                     break;
                 }
@@ -94,7 +95,7 @@ public class Main {
         else{
             if (a == 2) {
                 for (Room rom: hotel.rooms){
-                    if(rom instanceof Room1 && rom.isEmptyRoom()){
+                    if(rom.getPrice() == 300 && rom.isEmptyRoom()){
                         room = rom;
                         break;
                     }
