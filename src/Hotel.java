@@ -39,7 +39,8 @@ public class Hotel {
     public void editPerson(String CMND, Person newPerson){
         for (Person person: personList){
             if (person.getCMND().equals(CMND)){
-                person = newPerson;
+                personList.remove(person);
+                personList.add(newPerson);
             }
         }
     }
