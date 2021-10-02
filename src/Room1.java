@@ -1,6 +1,8 @@
 public class Room1 extends Room{
-    public Room1() {
-        super("Normal", 200, 101);
+    public Room1(int roomNumber) {
+        super(roomNumber);
+        setTypeRoom("Normal");
+        setPrice(300);
     }
 
     @Override

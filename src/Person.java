@@ -59,9 +59,8 @@ public class Person {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", CMND='" + CMND + '\'' +
-                ", room=" + room +
                 ", numberRent=" + numberRent +
-                ", Room: " + room.toString() +
+                ", Room: " + room.getRoomNumber() +
                 '}';
     }
 }
