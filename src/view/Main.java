@@ -6,7 +6,6 @@ import model.Person;
 import model.Room;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {

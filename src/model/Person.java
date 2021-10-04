@@ -4,15 +4,13 @@ public class Person {
     private String name;
     private int age;
     private String CMND;
-//    private Room room;
-//    private int numberRent;
+
 
     public Person(String name, int age, String CMND) {
         this.name = name;
         this.age = age;
         this.CMND = CMND;
-//        this.room = room;
-//        this.numberRent = numberRent;
+
     }
 
     public String getName() {
@@ -38,22 +36,6 @@ public class Person {
     public void setCMND(String CMND) {
         this.CMND = CMND;
     }
-
-//    public Room getRoom() {
-//        return room;
-//    }
-//
-//    public void setRoom(Room room) {
-//        this.room = room;
-//    }
-
-//    public int getNumberRent() {
-//        return numberRent;
-//    }
-//
-//    public void setNumberRent(int numberRent) {
-//        this.numberRent = numberRent;
-//    }
 
     @Override
     public String toString() {
