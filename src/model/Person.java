@@ -1,16 +1,18 @@
+package model;
+
 public class Person {
     private String name;
     private int age;
     private String CMND;
-    private Room room;
-    private int numberRent;
+//    private Room room;
+//    private int numberRent;
 
-    public Person(String name, int age, String CMND, Room room, int numberRent) {
+    public Person(String name, int age, String CMND) {
         this.name = name;
         this.age = age;
         this.CMND = CMND;
-        this.room = room;
-        this.numberRent = numberRent;
+//        this.room = room;
+//        this.numberRent = numberRent;
     }
 
     public String getName() {
@@ -37,30 +39,27 @@ public class Person {
         this.CMND = CMND;
     }
 
-    public Room getRoom() {
-        return room;
-    }
+//    public Room getRoom() {
+//        return room;
+//    }
+//
+//    public void setRoom(Room room) {
+//        this.room = room;
+//    }
 
-    public void setRoom(Room room) {
-        this.room = room;
-    }
-
-    public int getNumberRent() {
-        return numberRent;
-    }
-
-    public void setNumberRent(int numberRent) {
-        this.numberRent = numberRent;
-    }
+//    public int getNumberRent() {
+//        return numberRent;
+//    }
+//
+//    public void setNumberRent(int numberRent) {
+//        this.numberRent = numberRent;
+//    }
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", age=" + age +
                 ", CMND='" + CMND + '\'' +
-                ", numberRent=" + numberRent +
-                ", Room: " + room.getRoomNumber() +
                 '}';
     }
 }

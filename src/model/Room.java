@@ -1,3 +1,5 @@
+package model;
+
 public class Room {
     private String typeRoom;
     private int price;
@@ -41,5 +43,11 @@ public class Room {
 
     public void setEmptyRoom(boolean emptyRoom) {
         this.emptyRoom = emptyRoom;
+    }
+
+    @Override
+    public String toString() {
+        return "Room " + "typeRoom: '" + typeRoom + '\'' +
+                ", roomNumber=" + roomNumber ;
     }
 }
